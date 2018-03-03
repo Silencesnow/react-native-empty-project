@@ -1,0 +1,111 @@
+import { StyleSheet } from 'react-native';
+import { width, height, rem } from '../../utils/theme';
+const innerWidth=width-24;
+console.log(innerWidth)
+const styles = StyleSheet.create({
+  broadcastItem:{
+    padding:12,
+    borderBottomColor:'#e8e9ea',
+    borderBottomWidth:8
+  },
+  header:{
+    display:'flex',
+    flexDirection:'row',
+    justifyContent:'space-between'
+  },
+  user:{
+    display:'flex',
+    flexDirection:'row',
+    justifyContent:'flex-start',
+    alignItems:'center',
+    height:70
+  },
+  userImg:{
+    position:'relative',
+    paddingTop:9,
+    marginRight:12
+  },
+  userHeadimg:{
+    width:49,
+    height:49,
+    borderRadius:24.5
+  },
+  elfMainImg:{
+    position:'absolute',
+    left:-3,
+    top:-8,
+    width:20,
+    height:29,
+    resizeMode:'contain'
+  },
+  userSex: {
+    position:'absolute',
+    left:32,
+    top:40,
+    width:17,
+    height:17
+  },
+  nickname: {
+    fontSize:1.3*rem,
+    color:'#062544'
+  },
+  valleyName:{
+    fontSize:1.2*rem,
+    color:'#7c8a93'
+  },
+  userTime:{
+    marginTop:12,
+    fontSize:1.2*rem,
+    color:'#7c8a93'
+  },
+  content:{
+  },
+  singleImg:{
+    marginBottom:12,
+    width:37.6*rem,
+    height:27*rem,
+    borderRadius:10
+  },
+  text:{
+    fontSize:1.6*rem,
+    color:'#062544'
+  },
+  bottom:{
+    display:'flex',
+    flexDirection:'row',
+    justifyContent:'space-between',
+    marginTop:5
+  },
+  bottomInfoWrapper:{
+    display:'flex',
+    flexDirection:'row',
+  },
+  bottomInfo:{
+    display:'flex',
+    flexDirection:'row',
+    marginRight:8,
+    alignItems:'center'
+  },
+  icon: {
+    marginRight:5,
+    width:20,
+    height:18,
+    resizeMode:'contain'
+  },
+  bottomText:{
+    fontSize:1.3*rem,
+    color:'#acc0cc'
+  },
+  bottomFavorText:{
+    fontSize:1.3*rem,
+    color:'#ff635f'
+  },
+  bottomMoreText:{
+    fontSize:3*rem,
+    color:'#acc0cc'
+  }
+});
+
+module.exports = {
+  styles
+}
